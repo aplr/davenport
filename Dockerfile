@@ -9,7 +9,7 @@ RUN export DEBIAN_FRONTEND="noninteractive" && \
 # Install python
 RUN apt-get update && \
     apt-get install -y python wget && \
-    wget -O get-pip.py https://bootstrap.pypa.io/get-pip.py && \
+    wget -O get-pip.py https://bootstrap.pypa.io/pip/2.7/get-pip.py && \
     python2 get-pip.py && \
     pip install Pygments pandocfilters && \
     pip uninstall -y pip setuptools && \
